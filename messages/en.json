@@ -3,9 +3,166 @@
         "process": "Process",
         "testimonials": "Testimonials",
         "services": "Services",
-        "contact": "Contact"
+        "contact": "Contact",
+        "toggle_menu": "Toggle menu",
+        "menu": {
+            "services": "Services",
+            "contact": "Contact"
+        }
     },
     "LanguageSwitcher": {
         "label": "Change language"
+    },
+    "Hero": {
+        "rating_text": "4.9 / 5.0",
+        "headline_start": "AI Automation",
+        "headline_end": "for Enterprises",
+        "subheadline": "Automate sales, marketing, and processes with AI.",
+        "badge_server": "Server in Germany",
+        "badge_gdpr": "GDPR Compliant",
+        "cta_button": "Book Appointment",
+        "trusted_by": "TRUSTED BY INNOVATIVE TEAMS"
+    },
+    "Services": {
+        "badge": "Services",
+        "title": "Our Offerings",
+        "description": "Powerful tools to automate every aspect of your business operations and customer interactions.",
+        "items": {
+            "voice_agents": {
+                "title": "AI Voice Agents",
+                "description": "Intelligent voice assistants ensuring zero wait times. Handle customer queries around the clock with natural language."
+            },
+            "seo": {
+                "title": "Google Ranking SEO",
+                "description": "Streamline repetitive tasks with custom AI workflows that integrate seamlessly with your existing tech stack."
+            },
+            "outreach": {
+                "title": "Smart Outreach",
+                "description": "Scale your prospecting with personalized, AI-driven outreach campaigns that engage and convert efficiently."
+            },
+            "support": {
+                "title": "24/7 Support",
+                "description": "Instant resolution for customer issues. AI agents that learn from every interaction to continuously improve quality."
+            }
+        }
+    },
+    "Process": {
+        "badge": "Process",
+        "title": "It's simple!",
+        "description": "Our proven methodology to transform your business with AI.",
+        "steps": {
+            "step1": {
+                "label": "STEP 1",
+                "title": "Analysis",
+                "description": "We analyze your existing workflows to identify high-impact automation opportunities."
+            },
+            "step2": {
+                "label": "STEP 2",
+                "title": "Implementation",
+                "description": "Development and deployment of custom AI agents tailored to your specific infrastructure."
+            },
+            "step3": {
+                "label": "STEP 3",
+                "title": "Optimization",
+                "description": "Continuous monitoring and refinement of your AI systems to ensure 99.9% reliability."
+            }
+        }
+    },
+    "Testimonials": {
+        "badge": "Testimonials",
+        "title": "Voice of our Customers",
+        "description": "See how we've transformed businesses with our AI technology.",
+        "items": [
+            {
+                "quote": "\"Teqvention's AI agents completely transformed our support workflow. Response times dropped by 80% overnight.\"",
+                "title": "Sarah Jenkins",
+                "role": "@sarah_tech"
+            },
+            {
+                "quote": "\"The best investment we made this year. The automated outreach campaigns are incredibly personalized and effective.\"",
+                "title": "Mark Thompson",
+                "role": "@mark_saas"
+            },
+            {
+                "quote": "\"Incredible DX. Setting up the voice agents took minutes, and the quality is indistinguishable from human support.\"",
+                "title": "Emily Chen",
+                "role": "@emily_c"
+            },
+            {
+                "quote": "\"Seamless integration with our existing stack. It just works, and the ROI was visible within the first week.\"",
+                "title": "David Ross",
+                "role": "@david_r"
+            },
+            {
+                "quote": "\"The content planning feature alone saved us 20 hours a week. It's like having a full-time strategist on the team.\"",
+                "title": "Lisa Wong",
+                "role": "@lisawong"
+            },
+            {
+                "quote": "\"Robust, scalable, and secure. We audited the workflows and they are cleaner than what we wrote manually.\"",
+                "title": "James Wilson",
+                "role": "@jwilson"
+            },
+            {
+                "quote": "\"Finally, an AI tool that doesn't feel like a gimmick. It solves real operational bottlenecks for us.\"",
+                "title": "Anna K.",
+                "role": "@annak_dev"
+            },
+            {
+                "quote": "\"The visibility dashboard is a game changer. We know exactly where we stand and how to improve.\"",
+                "title": "Tom H.",
+                "role": "@tom_h"
+            }
+        ]
+    },
+    "FAQ": {
+        "badge": "FAQ",
+        "title": "Have questions?",
+        "description": "Everything you need to know about our AI automation services.",
+        "items": {
+            "item1": {
+                "question": "How quickly can we get started?",
+                "answer": "We typically launch your first AI agent within 48-72 hours after the initial onboarding call. Our team handles the entire setup, training, and integration process so you can focus on results."
+            },
+            "item2": {
+                "question": "Do you offer custom integrations?",
+                "answer": "Yes, Teqvention integrates with most major CRM, ERP, and support platforms including Salesforce, HubSpot, Zendesk, and custom APIs. We ensure seamless data flow across your stack."
+            },
+            "item3": {
+                "question": "Is my data secure?",
+                "answer": "Absolutely. We are SOC2 compliant and use enterprise-grade encryption for all data processing. Your customer data is isolated and never used to train public models without your permission."
+            },
+            "item4": {
+                "question": "Do you provide ongoing maintenance?",
+                "answer": "Yes, all our plans include ongoing maintenance, monitoring, and regular updates. We continuously refine the AI models based on performance data to ensure optimal results."
+            }
+        }
+    },
+    "Footer": {
+        "description": "We support medium-sized companies in the structured digitalization of their processes – strategically, technically and sustainably.",
+        "product": "Product",
+        "company": "Company",
+        "resources": "Resources",
+        "links": {
+            "features": "Features",
+            "integrations": "Integrations",
+            "pricing": "Pricing",
+            "changelog": "Changelog",
+            "about": "About Us",
+            "careers": "Careers",
+            "blog": "Blog",
+            "contact": "Contact",
+            "documentation": "Documentation",
+            "help_center": "Help Center",
+            "community": "Community",
+            "partners": "Partners",
+            "legal": "Legal"
+        },
+        "copyright": "© 2024 Teqvention AI Inc. All rights reserved."
+    },
+    "Contact": {
+        "badge": "Booking",
+        "title": "Contact",
+        "description": "Book a call with us to discuss your automation needs."
     }
 }

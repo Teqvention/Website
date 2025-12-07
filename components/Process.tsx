@@ -2,15 +2,18 @@ import { FileText } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/ui/section-header";
 import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
+import { useTranslations } from "next-intl";
 
 export function Process() {
+    const t = useTranslations('Process');
+
     return (
         <section className="w-full mt-32" id="process">
             <Container>
                 <SectionHeader
-                    badge="Prozess"
-                    title="So einfach gehts!"
-                    description="Our proven methodology to transform your business with AI."
+                    badge={t('badge')}
+                    title={t('title')}
+                    description={t('description')}
                 />
 
                 <div className="grid gap-8 md:grid-cols-3">
@@ -19,7 +22,7 @@ export function Process() {
                         {/* Visual Area */}
                         <div className="flex overflow-hidden bg-gradient-to-b from-slate-50 to-white w-full h-64 pt-8 pr-8 pb-0 pl-8 relative items-center justify-center">
                             <div className="absolute top-6 left-6 inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500 shadow-sm z-10">
-                                STEP 1
+                                {t('steps.step1.label')}
                             </div>
                             {/* Mockup */}
                             <div className="relative w-full h-full mt-8 rounded-t-xl bg-white border border-slate-200 shadow-lg p-4 flex flex-col gap-3 translate-y-2">
@@ -41,10 +44,9 @@ export function Process() {
                             </div>
                         </div>
                         <CardContent className="pt-8">
-                            <CardTitle className="mb-3">Analyse</CardTitle>
+                            <CardTitle className="mb-3">{t('steps.step1.title')}</CardTitle>
                             <CardDescription>
-                                We analyze your existing workflows to identify high-impact
-                                automation opportunities.
+                                {t('steps.step1.description')}
                             </CardDescription>
                         </CardContent>
                     </Card>
@@ -54,7 +56,7 @@ export function Process() {
                         {/* Visual Area */}
                         <div className="relative flex h-64 w-full items-center justify-center bg-gradient-to-b from-slate-50 to-white px-8 pt-8 pb-0 overflow-hidden">
                             <div className="absolute top-6 left-6 inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500 shadow-sm z-10">
-                                STEP 2
+                                {t('steps.step2.label')}
                             </div>
                             {/* Mockup: Grid of small items */}
                             <div className="grid grid-cols-2 gap-4 w-full h-full mt-8 translate-y-2">
@@ -91,10 +93,9 @@ export function Process() {
                             </div>
                         </div>
                         <CardContent className="pt-8">
-                            <CardTitle className="mb-3">Umsetzung</CardTitle>
+                            <CardTitle className="mb-3">{t('steps.step2.title')}</CardTitle>
                             <CardDescription>
-                                Development and deployment of custom AI agents tailored to your
-                                specific infrastructure.
+                                {t('steps.step2.description')}
                             </CardDescription>
                         </CardContent>
                     </Card>
@@ -104,7 +105,7 @@ export function Process() {
                         {/* Visual Area */}
                         <div className="relative flex h-64 w-full items-center justify-center bg-gradient-to-b from-slate-50 to-white px-8 pt-8 pb-0 overflow-hidden">
                             <div className="absolute top-6 left-6 inline-flex items-center rounded-full border border-slate-200 bg-white px-3 py-1 text-xs font-semibold text-slate-500 shadow-sm z-10">
-                                STEP 3
+                                {t('steps.step3.label')}
                             </div>
                             {/* Mockup: Dashboard */}
                             <div className="relative w-full h-full mt-8 rounded-t-xl bg-white border border-slate-200 shadow-lg p-4 flex flex-col gap-3 translate-y-2">
@@ -139,10 +140,9 @@ export function Process() {
                             </div>
                         </div>
                         <CardContent className="pt-8">
-                            <CardTitle className="mb-3">Optimierung</CardTitle>
+                            <CardTitle className="mb-3">{t('steps.step3.title')}</CardTitle>
                             <CardDescription>
-                                Continuous monitoring and refinement of your AI systems to ensure
-                                99.9% reliability.
+                                {t('steps.step3.description')}
                             </CardDescription>
                         </CardContent>
                     </Card>

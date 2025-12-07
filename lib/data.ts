@@ -2,6 +2,7 @@ import { Globe, Trophy, Mail, Phone } from "lucide-react";
 
 export const services = [
     {
+        id: "voice_agents",
         title: "AI Voice Agents",
         description: "Intelligent voice assistants ensuring zero wait times. Handle customer queries around the clock with natural language.",
         icon: Globe,
@@ -12,6 +13,7 @@ export const services = [
         href: "#services"
     },
     {
+        id: "seo",
         title: "Google Ranking SEO",
         description: "Streamline repetitive tasks with custom AI workflows that integrate seamlessly with your existing tech stack.",
         icon: Trophy,
@@ -22,6 +24,7 @@ export const services = [
         href: "#services"
     },
     {
+        id: "outreach",
         title: "Smart Outreach",
         description: "Scale your prospecting with personalized, AI-driven outreach campaigns that engage and convert efficiently.",
         icon: Mail,
@@ -32,6 +35,7 @@ export const services = [
         href: "#services"
     },
     {
+        id: "support",
         title: "24/7 Support",
         description: "Instant resolution for customer issues. AI agents that learn from every interaction to continuously improve quality.",
         icon: Phone,

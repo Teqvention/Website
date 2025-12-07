@@ -12,6 +12,7 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 export function Navbar() {
     const t = useTranslations('Navbar');
+    const tServices = useTranslations('Services');
     const [isOpen, setIsOpen] = useState(false);
 
     const navLinks = [
@@ -67,7 +68,7 @@ export function Navbar() {
                                 <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-2 overflow-hidden">
                                     {services.map((service) => (
                                         <Link
-                                            key={service.title}
+                                            key={service.id}
                                             href={service.href}
                                             onClick={(e) => handleScroll(e, service.href)}
                                             className="flex items-center gap-3 p-3 rounded-xl hover:bg-slate-50 transition-colors group/item"
@@ -76,7 +77,7 @@ export function Navbar() {
                                                 <service.icon className="h-5 w-5" />
                                             </div>
                                             <span className="text-sm font-medium text-slate-700 group-hover/item:text-slate-900">
-                                                {service.title}
+                                                {tServices(`items.${service.id}.title`)}
                                             </span>
                                         </Link>
                                     ))}

@@ -3,9 +3,166 @@
         "process": "Prozess",
         "testimonials": "Bewertungen",
         "services": "Leistungen",
-        "contact": "Kontakt"
+        "contact": "Kontakt",
+        "toggle_menu": "Menü umschalten",
+        "menu": {
+            "services": "Dienstleistungen",
+            "contact": "Kontakt aufnehmen"
+        }
     },
     "LanguageSwitcher": {
         "label": "Sprache ändern"
+    },
+    "Hero": {
+        "rating_text": "4.9 / 5.0",
+        "headline_start": "KI Automatisierung",
+        "headline_end": "für Unternehmen",
+        "subheadline": "Automatisieren Sie Vertrieb, Marketing und Prozesse mit KI.",
+        "badge_server": "Server in Deutschland",
+        "badge_gdpr": "DGSVO-Konform",
+        "cta_button": "Termine vereinbaren",
+        "trusted_by": "VERTRAUT VON INNOVATIVEN TEAMS"
+    },
+    "Services": {
+        "badge": "Leistungen",
+        "title": "Unsere Angebote",
+        "description": "Leistungsstarke Tools zur Automatisierung aller Aspekte Ihrer Geschäftsabläufe und Kundeninteraktionen.",
+        "items": {
+            "voice_agents": {
+                "title": "KI Sprach-Assistenten",
+                "description": "Intelligente Sprachassistenten ohne Wartezeit. Bearbeiten Sie Kundenanfragen rund um die Uhr mit natürlicher Sprache."
+            },
+            "seo": {
+                "title": "Google Ranking SEO",
+                "description": "Rationalisieren Sie wiederkehrende Aufgaben mit benutzerdefinierten KI-Workflows, die sich nahtlos in Ihren bestehenden Tech-Stack integrieren."
+            },
+            "outreach": {
+                "title": "Smarte Akquise",
+                "description": "Skalieren Sie Ihre Akquise mit personalisierten, KI-gesteuerten Kampagnen, die effizient konvertieren."
+            },
+            "support": {
+                "title": "24/7 Support",
+                "description": "Sofortige Lösung für Kundenprobleme. KI-Agenten, die aus jeder Interaktion lernen, um die Qualität kontinuierlich zu verbessern."
+            }
+        }
+    },
+    "Process": {
+        "badge": "Prozess",
+        "title": "So einfach gehts!",
+        "description": "Unsere bewährte Methodik zur Transformation Ihres Unternehmens mit KI.",
+        "steps": {
+            "step1": {
+                "label": "SCHRITT 1",
+                "title": "Analyse",
+                "description": "Wir analysieren Ihre bestehenden Arbeitsabläufe, um Automatisierungspotenziale mit hoher Wirkung zu identifizieren."
+            },
+            "step2": {
+                "label": "SCHRITT 2",
+                "title": "Umsetzung",
+                "description": "Entwicklung und Bereitstellung maßgeschneiderter KI-Agenten, die auf Ihre spezifische Infrastruktur zugeschnitten sind."
+            },
+            "step3": {
+                "label": "SCHRITT 3",
+                "title": "Optimierung",
+                "description": "Kontinuierliche Überwachung und Verfeinerung Ihrer KI-Systeme, um 99,9% Zuverlässigkeit zu gewährleisten."
+            }
+        }
+    },
+    "Testimonials": {
+        "badge": "Bewertungen",
+        "title": "Stimmen unserer Kunden",
+        "description": "Erfahren Sie, wie wir Unternehmen mit unserer KI-Technologie transformiert haben.",
+        "items": [
+            {
+                "quote": "\"Die KI-Agenten von Teqvention haben unseren Support-Workflow komplett verändert. Die Antwortzeiten sanken über Nacht um 80%.\"",
+                "title": "Sarah Jenkins",
+                "role": "@sarah_tech"
+            },
+            {
+                "quote": "\"Die beste Investition, die wir dieses Jahr getätigt haben. Die automatisierten Akquise-Kampagnen sind unglaublich persönlich und effektiv.\"",
+                "title": "Mark Thompson",
+                "role": "@mark_saas"
+            },
+            {
+                "quote": "\"Unglaubliche Developer Experience. Die Einrichtung der Sprachagenten dauerte nur Minuten und die Qualität ist kaum von menschlichem Support zu unterscheiden.\"",
+                "title": "Emily Chen",
+                "role": "@emily_c"
+            },
+            {
+                "quote": "\"Nahtlose Integration in unseren bestehenden Stack. Es funktioniert einfach, und der ROI war innerhalb der ersten Woche sichtbar.\"",
+                "title": "David Ross",
+                "role": "@david_r"
+            },
+            {
+                "quote": "\"Allein die Content-Planungs-Funktion hat uns 20 Stunden pro Woche gespart. Es ist, als hätten wir einen Vollzeit-Strategen im Team.\"",
+                "title": "Lisa Wong",
+                "role": "@lisawong"
+            },
+            {
+                "quote": "\"Robust, skalierbar und sicher. Wir haben die Workflows geprüft und sie sind sauberer als das, was wir manuell geschrieben haben.\"",
+                "title": "James Wilson",
+                "role": "@jwilson"
+            },
+            {
+                "quote": "\"Endlich ein KI-Tool, das sich nicht wie eine Spielerei anfühlt. Es löst echte operative Engpässe für uns.\"",
+                "title": "Anna K.",
+                "role": "@annak_dev"
+            },
+            {
+                "quote": "\"Das Visibility-Dashboard ist ein Game-Changer. Wir wissen genau, wo wir stehen und wie wir uns verbessern können.\"",
+                "title": "Tom H.",
+                "role": "@tom_h"
+            }
+        ]
+    },
+    "FAQ": {
+        "badge": "FAQ",
+        "title": "Haben Sie noch Fragen?",
+        "description": "Alles, was Sie über unsere KI-Automatisierungsdienste wissen müssen.",
+        "items": {
+            "item1": {
+                "question": "Wie schnell können wir starten?",
+                "answer": "Wir starten Ihren ersten KI-Agenten in der Regel innerhalb von 48-72 Stunden nach dem ersten Onboarding-Gespräch. Unser Team kümmert sich um die gesamte Einrichtung, das Training und die Integration, damit Sie sich auf die Ergebnisse konzentrieren können."
+            },
+            "item2": {
+                "question": "Bieten Sie individuelle Integrationen an?",
+                "answer": "Ja, Teqvention integriert sich in die meisten gängigen CRM-, ERP- und Support-Plattformen, einschließlich Salesforce, HubSpot, Zendesk und benutzerdefinierte APIs. Wir sorgen für einen nahtlosen Datenfluss in Ihrem Stack."
+            },
+            "item3": {
+                "question": "Sind meine Daten sicher?",
+                "answer": "Absolut. Wir sind SOC2-konform und verwenden Verschlüsselung auf Enterprise-Niveau für alle Datenverarbeitungen. Ihre Kundendaten werden isoliert und niemals ohne Ihre Erlaubnis zum Trainieren öffentlicher Modelle verwendet."
+            },
+            "item4": {
+                "question": "Bieten Sie laufende Wartung an?",
+                "answer": "Ja, alle unsere Pläne beinhalten laufende Wartung, Überwachung und regelmäßige Updates. Wir verfeinern die KI-Modelle kontinuierlich auf Basis von Leistungsdaten, um optimale Ergebnisse zu gewährleisten."
+            }
+        }
+    },
+    "Footer": {
+        "description": "Wir unterstützen mittelständische Unternehmen bei der strukturierten Digitalisierung ihrer Prozesse – strategisch, technisch und nachhaltig.",
+        "product": "Produkt",
+        "company": "Unternehmen",
+        "resources": "Ressourcen",
+        "links": {
+            "features": "Funktionen",
+            "integrations": "Integrationen",
+            "pricing": "Preise",
+            "changelog": "Änderungsprotokoll",
+            "about": "Über uns",
+            "careers": "Karriere",
+            "blog": "Blog",
+            "contact": "Kontakt",
+            "documentation": "Dokumentation",
+            "help_center": "Hilfe-Center",
+            "community": "Community",
+            "partners": "Partner",
+            "legal": "Impressum"
+        },
+        "copyright": "© 2024 Teqvention AI Inc. Alle Rechte vorbehalten."
+    },
+    "Contact": {
+        "badge": "Buchung",
+        "title": "Kontakt",
+        "description": "Buchen Sie einen Termin mit uns, um Ihre Automatisierungsbedürfnisse zu besprechen."
     }
 }

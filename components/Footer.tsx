@@ -1,8 +1,11 @@
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Bot } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+    const t = useTranslations('Footer');
+
     return (
         <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-12">
             <Container>
@@ -24,7 +27,7 @@ export function Footer() {
                                 </div>
                             </div>
                             <p className="text-sm text-slate-500 max-w-sm">
-                                Wir unterstützen mittelständische Unternehmen bei der strukturierten Digitalisierung ihrer Prozesse – strategisch, technisch und nachhaltig.
+                                {t('description')}
                             </p>
                             <div className="flex items-center gap-3 text-slate-500">
                                 {/* LinkedIn */}
@@ -66,135 +69,49 @@ export function Footer() {
                         <div className="flex-1 grid grid-cols-2 md:grid-cols-3 gap-8 text-sm">
                             <div className="space-y-3">
                                 <h3 className="font-semibold text-slate-900">
-                                    Product
+                                    {t('product')}
                                 </h3>
                                 <ul className="space-y-2 text-slate-600">
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Features
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Integrations
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Pricing
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Changelog
-                                        </Link>
-                                    </li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.features')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.integrations')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.pricing')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.changelog')}</Link></li>
                                 </ul>
                             </div>
                             <div className="space-y-3">
                                 <h3 className="font-semibold text-slate-900">
-                                    Company
+                                    {t('company')}
                                 </h3>
                                 <ul className="space-y-2 text-slate-600">
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            About Us
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Careers
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Blog
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Contact
-                                        </Link>
-                                    </li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.about')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.careers')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.blog')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.contact')}</Link></li>
                                 </ul>
                             </div>
                             <div className="space-y-3">
                                 <h3 className="font-semibold text-slate-900">
-                                    Resources
+                                    {t('resources')}
                                 </h3>
                                 <ul className="space-y-2 text-slate-600">
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Documentation
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Help Center
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Community
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            href="#"
-                                            className="hover:text-slate-900 transition-colors"
-                                        >
-                                            Partners
-                                        </Link>
-                                    </li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.documentation')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.help_center')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.community')}</Link></li>
+                                    <li><Link href="#" className="hover:text-slate-900 transition-colors">{t('links.partners')}</Link></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-
-
                     {/* Bottom row */}
                     <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-slate-400 mt-8">
-                        <p>© 2024 Teqvention AI Inc. All rights reserved.</p>
+                        <p>{t('copyright')}</p>
                         <div className="flex flex-wrap gap-4">
                             <Link
                                 href="/impressum"
                                 className="hover:text-slate-700 transition-colors"
                             >
-                                Impressum
+                                {t('links.legal')}
                             </Link>
                         </div>
                     </div>

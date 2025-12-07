@@ -4,8 +4,11 @@ import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/ui/section-header";
+import { useTranslations } from "next-intl";
 
 export function Contact() {
+    const t = useTranslations('Contact');
+
     useEffect(() => {
         (async function () {
             const cal = await getCalApi({ "namespace": "15min" });
@@ -17,9 +20,9 @@ export function Contact() {
         <section className="w-full mt-32 mb-20" id="contact">
             <Container>
                 <SectionHeader
-                    badge="Booking"
-                    title="Kontakt"
-                    description="Book a call with us to discuss your automation needs."
+                    badge={t('badge')}
+                    title={t('title')}
+                    description={t('description')}
                     className="mb-16"
                 />
                 <Cal

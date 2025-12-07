@@ -2,8 +2,11 @@ import { Bot, Workflow, Zap, RefreshCw, Star, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { useTranslations } from "next-intl";
 
 export function Hero() {
+    const t = useTranslations('Hero');
+
     return (
         <main className="overflow-hidden lg:pt-24 pt-16 relative">
             <Container className="text-center">
@@ -18,7 +21,7 @@ export function Hero() {
                             ))}
                         </div>
                         <span className="text-sm font-medium text-slate-700">
-                            4.9 / 5.0
+                            {t('rating_text')}
                         </span>
                     </div>
 
@@ -53,26 +56,26 @@ export function Hero() {
                         </div>
 
                         <h1 className="md:text-7xl lg:text-7xl justify-center text-5xl font-semibold text-slate-900 tracking-tight">
-                            KI Automatisierung
+                            {t('headline_start')}
                             <span className="block bg-clip-text text-transparent bg-blue-600">
-                                für Unternehmen
+                                {t('headline_end')}
                             </span>
                         </h1>
                     </div>
 
                     <p className="leading-relaxed md:text-xl text-lg text-slate-500 max-w-2xl mt-8 mr-auto ml-auto">
-                        Automatisieren Sie Vertrieb, Marketing und Prozesse mit KI.
+                        {t('subheadline')}
                     </p>
                     <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 text-base font-medium text-slate-700 mt-8 gap-x-4 gap-y-4 items-center justify-center">
                         <div className="flex gap-x-2 gap-y-2 items-center">
                             {/* Server in Deutschland Flag */}
                             <img src="/svg/flag-de.svg" alt="Germany Flag" className="w-[20px] h-[20px]" />
-                            <span>Server in Deutschland</span>
+                            <span>{t('badge_server')}</span>
                         </div>
                         <div className="flex items-center gap-2">
                             {/* EU Flag */}
                             <img src="/svg/flag-eu.svg" alt="EU Flag" className="w-[20px] h-[20px]" />
-                            <span>DGSVO-Konform</span>
+                            <span>{t('badge_gdpr')}</span>
                         </div>
                     </div>
 
@@ -80,7 +83,7 @@ export function Hero() {
                     <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                         <Button asChild size="lg" className="w-full sm:w-auto text-lg h-auto py-4 px-8">
                             <Link href="#" className="group">
-                                Termine vereinbaren
+                                {t('cta_button')}
                                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                             </Link>
                         </Button>
@@ -89,7 +92,7 @@ export function Hero() {
                     {/* Social Proof Logos */}
                     <div className="mt-20 w-full">
                         <p className="mb-8 text-center text-sm font-medium text-slate-400">
-                            TRUSTED BY INNOVATIVE TEAMS
+                            {t('trusted_by')}
                         </p>
                         <div className="relative w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_15%,black_85%,transparent)]">
                             <div className="flex w-max animate-ticker items-center py-4 opacity-60 grayscale transition-all hover:grayscale-0">
