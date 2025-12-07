@@ -1,0 +1,11 @@
+{
+    "Navbar": {
+        "process": "Prozess",
+        "testimonials": "Bewertungen",
+        "services": "Leistungen",
+        "contact": "Kontakt"
+    },
+    "LanguageSwitcher": {
+        "label": "Sprache ändern"
+    }
+}
