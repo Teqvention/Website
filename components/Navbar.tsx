@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { useState } from "react";
 import { services } from "@/lib/data";
-import { animate } from "framer-motion";
+
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -28,12 +28,9 @@ export function Navbar() {
 
         if (element) {
             const y = element.getBoundingClientRect().top + window.scrollY - 100; // Offset for sticky header
-            animate(window.scrollY, y, {
-                type: "spring",
-                stiffness: 50,
-                damping: 15,
-                mass: 1,
-                onUpdate: (latest) => window.scrollTo(0, latest)
+            window.scrollTo({
+                top: y,
+                behavior: "smooth"
             });
         }
     };
