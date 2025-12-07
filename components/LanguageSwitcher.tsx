@@ -1,8 +1,8 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { usePathname, useRouter } from "@/i18n/routing";
-import { useState, useTransition } from "react";
+import { usePathname, Link } from "@/i18n/routing";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
 
@@ -33,22 +33,13 @@ const FlagDE = () => (
 );
 
 export default function LanguageSwitcher() {
-    const [isPending, startTransition] = useTransition();
     const locale = useLocale();
-    const router = useRouter();
     const pathname = usePathname();
     const t = useTranslations("LanguageSwitcher");
 
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleDropdown = () => setIsOpen(!isOpen);
-
-    const onSelectChange = (nextLocale: string) => {
-        startTransition(() => {
-            router.replace(pathname, { locale: nextLocale });
-        });
-        setIsOpen(false);
-    };
 
     return (
         <div className="relative">
@@ -65,22 +56,26 @@ export default function LanguageSwitcher() {
 
             {isOpen && (
                 <div className="absolute right-0 top-full mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50">
-                    <button
-                        onClick={() => onSelectChange('en')}
+                    <Link
+                        href={pathname}
+                        locale="en"
+                        onClick={() => setIsOpen(false)}
                         className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 flex items-center gap-3 transition-colors ${locale === 'en' ? 'bg-slate-50 font-medium' : 'text-slate-600'
                             }`}
                     >
                         <FlagGB />
                         English
-                    </button>
-                    <button
-                        onClick={() => onSelectChange('de')}
+                    </Link>
+                    <Link
+                        href={pathname}
+                        locale="de"
+                        onClick={() => setIsOpen(false)}
                         className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 flex items-center gap-3 transition-colors ${locale === 'de' ? 'bg-slate-50 font-medium' : 'text-slate-600'
                             }`}
                     >
                         <FlagDE />
                         Deutsch
-                    </button>
+                    </Link>
                 </div>
             )}
         </div>
