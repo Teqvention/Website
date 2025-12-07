@@ -1,6 +1,5 @@
 import { Bot, Workflow, Zap, RefreshCw, Star, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 
@@ -67,12 +66,12 @@ export function Hero() {
                     <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 text-base font-medium text-slate-700 mt-8 gap-x-4 gap-y-4 items-center justify-center">
                         <div className="flex gap-x-2 gap-y-2 items-center">
                             {/* Server in Deutschland Flag */}
-                            <Image src="/svg/flag-de.svg" alt="Germany Flag" width={20} height={20} className="w-[20px] h-[20px]" />
+                            <img src="/svg/flag-de.svg" alt="Germany Flag" className="w-[20px] h-[20px]" />
                             <span>Server in Deutschland</span>
                         </div>
                         <div className="flex items-center gap-2">
                             {/* EU Flag */}
-                            <Image src="/svg/flag-eu.svg" alt="EU Flag" width={20} height={20} className="w-[20px] h-[20px]" />
+                            <img src="/svg/flag-eu.svg" alt="EU Flag" className="w-[20px] h-[20px]" />
                             <span>DGSVO-Konform</span>
                         </div>
                     </div>
@@ -97,7 +96,7 @@ export function Hero() {
                                 <div className="flex items-center gap-20 pr-20">
                                     {/* Vercel */}
                                     <div className="flex items-center gap-2 font-bold text-slate-800 text-xl">
-                                        <Image src="/svg/vercel.svg" alt="Vercel" width={24} height={24} className="h-6 w-6" />
+                                        <img src="/svg/vercel.svg" alt="Vercel" className="h-6 w-6" />
                                         Vercel
                                     </div>
                                     {/* Stripe */}
@@ -117,14 +116,14 @@ export function Hero() {
                                     </div>
                                     {/* NordProtect */}
                                     <div className="flex items-center gap-1 font-bold text-slate-800 text-xl">
-                                        <Image src="/svg/nordprotect.svg" alt="NordProtect" width={20} height={20} className="h-5 w-5" />
+                                        <img src="/svg/nordprotect.svg" alt="NordProtect" className="h-5 w-5" />
                                         NordProtect
                                     </div>
                                 </div>
                                 {/* Duplicate for infinite scroll effect */}
                                 <div className="flex items-center gap-20 pr-20">
                                     <div className="flex items-center gap-2 font-bold text-slate-800 text-xl">
-                                        <Image src="/svg/vercel.svg" alt="Vercel" width={24} height={24} className="h-6 w-6" />
+                                        <img src="/svg/vercel.svg" alt="Vercel" className="h-6 w-6" />
                                         Vercel
                                     </div>
                                     <div className="flex items-center gap-2 font-semibold text-slate-800 text-xl tracking-tight">
@@ -140,7 +139,7 @@ export function Hero() {
                                         <span className="font-light">Corp</span>
                                     </div>
                                     <div className="flex items-center gap-1 font-bold text-slate-800 text-xl">
-                                        <Image src="/svg/nordprotect.svg" alt="NordProtect" width={20} height={20} className="h-5 w-5" />
+                                        <img src="/svg/nordprotect.svg" alt="NordProtect" className="h-5 w-5" />
                                         NordProtect
                                     </div>
                                 </div>
