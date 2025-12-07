@@ -19,7 +19,8 @@ export default createMiddleware({
             defaultLocale: 'de',
             locales: ['de']
         }
-    ]
+    ],
+    localePrefix: 'never'
 });
 
 export const config = {
