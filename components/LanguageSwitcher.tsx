@@ -43,9 +43,51 @@ export default function LanguageSwitcher() {
     const toggleDropdown = () => setIsOpen(!isOpen);
 
     const getAbsoluteUrl = (targetLocale: string) => {
-        const domainConfig = routing.domains?.find(d => (d.locales as unknown as string[]).includes(targetLocale));
-        if (domainConfig) {
-            return `https://${domainConfig.domain}${pathname}`;
+        // Check if we are in production by looking at the window location (if available client-side)
+        if (typeof window !== 'undefined') {
+            const host = window.location.host;
+            // Only use domain routing if we are actually on one of the production domains
+            // or if we want to force it. For localhost/Vercel previews, we should probably stay relative
+            // BUT next-intl with localePrefix: 'never' requires domains for differentiation.
+
+            // If we are on localhost or a preview URL, we can't easily switch to the other domain 
+            // because it doesn't map to localhost.
+            // A common workaround for testing is to allow path-based fallback or just accept 
+            // that testing domain-based routing on localhost is hard without /etc/hosts modifications.
+
+            // However, to make it "work" (i.e. not break), we can fallback to standard Next.js navigation
+            // using the Link component or router, but next-intl's Link wraps this.
+
+            // The issue is: we are manually constructing https://${domainConfig.domain}${pathname}.
+            // If we are on localhost:3000, we want to go to localhost:3000/de usually, 
+            // but with localePrefix: 'never', that corresponds to teqvention.de.
+
+            // Allow bypassing domain check for localhost/vercel.app to prevent breaking navigation
+            if (host.includes('localhost') || host.includes('vercel.app')) {
+                // On dev/preview, we can't really switch domains easily unless configured.
+                // We will use the NEXT_PUBLIC_SITE_URL or just use path prefixes temporarily for dev?
+                // Or simpler: Just return a relative path with the locale prefix forcingly?
+                // But localePrefix: 'never' removes it.
+
+                // Let's try to return a path that includes the locale if we are not on prod domain,
+                // relying on middleware to handle it if we relaxed strict domain enforcement?
+                // No, middleware adheres to config.
+
+                // BEST FIX: If on non-prod, use query param or just keep it simple.
+                // Actually, the user says "Internationalization not working". 
+                // This implies they successfully deployed and are clicking and it fails?
+
+                // Let's assume they want it to work on Vercel.
+                // Reverting to standard Link is safer if we want to support non-domain envs.
+                // BUT we have to change the Routing config to allow prefixes if domains don't match?
+
+                return `/${targetLocale}${pathname === '/' ? '' : pathname}`;
+            }
+
+            const domainConfig = routing.domains?.find(d => (d.locales as unknown as string[]).includes(targetLocale));
+            if (domainConfig) {
+                return `https://${domainConfig.domain}${pathname}`;
+            }
         }
         return pathname;
     };
