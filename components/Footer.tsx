@@ -31,6 +31,7 @@ export function Footer() {
                                 <a
                                     href="#"
                                     className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-slate-400 hover:text-slate-900 transition-colors"
+                                    aria-label="LinkedIn"
                                 >
                                     <div className="w-3.5 h-3.5 bg-current [mask-image:url(/svg/linkedin.svg)] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat]" />
                                 </a>
@@ -38,6 +39,7 @@ export function Footer() {
                                 <a
                                     href="#"
                                     className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-slate-400 hover:text-slate-900 transition-colors"
+                                    aria-label="Twitter (X)"
                                 >
                                     <div className="w-3.5 h-3.5 bg-current [mask-image:url(/svg/twitter.svg)] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat]" />
                                 </a>
@@ -45,6 +47,7 @@ export function Footer() {
                                 <a
                                     href="#"
                                     className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-slate-400 hover:text-slate-900 transition-colors"
+                                    aria-label="YouTube"
                                 >
                                     <div className="w-4 h-4 bg-current [mask-image:url(/svg/youtube.svg)] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat]" />
                                 </a>
@@ -52,6 +55,7 @@ export function Footer() {
                                 <a
                                     href="#"
                                     className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center hover:border-slate-400 hover:text-slate-900 transition-colors"
+                                    aria-label="Instagram"
                                 >
                                     <div className="w-3.5 h-3.5 bg-current [mask-image:url(/svg/instagram.svg)] [mask-size:contain] [mask-position:center] [mask-repeat:no-repeat]" />
                                 </a>

@@ -114,6 +114,7 @@ export function Navbar() {
                     <button
                         className="flex md:hidden items-center justify-center text-slate-500 hover:text-slate-900"
                         onClick={() => setIsOpen(!isOpen)}
+                        aria-label="Toggle menu"
                     >
                         {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                     </button>
