@@ -1,7 +1,8 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { usePathname, Link } from "@/i18n/routing";
+import { usePathname } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
@@ -41,6 +42,14 @@ export default function LanguageSwitcher() {
 
     const toggleDropdown = () => setIsOpen(!isOpen);
 
+    const getAbsoluteUrl = (targetLocale: string) => {
+        const domainConfig = routing.domains?.find(d => (d.locales as unknown as string[]).includes(targetLocale));
+        if (domainConfig) {
+            return `https://${domainConfig.domain}${pathname}`;
+        }
+        return pathname;
+    };
+
     return (
         <div className="relative">
             <Button
@@ -56,26 +65,24 @@ export default function LanguageSwitcher() {
 
             {isOpen && (
                 <div className="absolute right-0 top-full mt-2 w-32 bg-white rounded-lg shadow-lg border border-gray-200 py-1 z-50">
-                    <Link
-                        href={pathname}
-                        locale="en"
+                    <a
+                        href={getAbsoluteUrl('en')}
                         onClick={() => setIsOpen(false)}
                         className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 flex items-center gap-3 transition-colors ${locale === 'en' ? 'bg-slate-50 font-medium' : 'text-slate-600'
                             }`}
                     >
                         <FlagGB />
                         English
-                    </Link>
-                    <Link
-                        href={pathname}
-                        locale="de"
+                    </a>
+                    <a
+                        href={getAbsoluteUrl('de')}
                         onClick={() => setIsOpen(false)}
                         className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 flex items-center gap-3 transition-colors ${locale === 'de' ? 'bg-slate-50 font-medium' : 'text-slate-600'
                             }`}
                     >
                         <FlagDE />
                         Deutsch
-                    </Link>
+                    </a>
                 </div>
             )}
         </div>
