@@ -16,7 +16,7 @@ export default async function LocaleLayout({
     params
 }: {
     children: React.ReactNode;
-    params: { locale: string };
+    params: Promise<{ locale: string }>;
 }) {
     // Ensure that the incoming `locale` is valid
     // (already handled by middleware but good for type safety)
