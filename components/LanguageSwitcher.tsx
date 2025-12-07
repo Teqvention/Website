@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale, useTranslations } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "@/i18n/routing";
 import { useState, useTransition } from "react";
 import { Button } from "@/components/ui/button";
 import { Globe } from "lucide-react";
@@ -45,8 +45,7 @@ export default function LanguageSwitcher() {
 
     const onSelectChange = (nextLocale: string) => {
         startTransition(() => {
-            // router.replace works with standard paths in next-intl if correctly configured or if using next/navigation
-            router.replace(`/${nextLocale}${pathname.replace(/^\/(de|en)/, '')}`);
+            router.replace(pathname, { locale: nextLocale });
         });
         setIsOpen(false);
     };

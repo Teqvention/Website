@@ -1,27 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
+import { routing } from './i18n/routing';
 
-export default createMiddleware({
-    // A list of all locales that are supported
-    locales: ['en', 'de'],
-
-    // Used when no locale matches
-    defaultLocale: 'en',
-
-    // Domain-based routing configuration
-    domains: [
-        {
-            domain: 'teqvention.com',
-            defaultLocale: 'en',
-            locales: ['en']
-        },
-        {
-            domain: 'teqvention.de',
-            defaultLocale: 'de',
-            locales: ['de']
-        }
-    ],
-    localePrefix: 'never'
-});
+export default createMiddleware(routing);
 
 export const config = {
     // Match all pathnames except for
