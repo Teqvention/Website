@@ -1,6 +1,8 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Inter } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 import "../globals.css";
 import { Metadata } from 'next';
 
@@ -31,6 +33,8 @@ export default async function LocaleLayout({
             <body className={`${inter.className} antialiased bg-gray-50 text-slate-600 selection:bg-blue-100 selection:text-blue-700 bg-white`}>
                 <NextIntlClientProvider messages={messages}>
                     {children}
+                    <SpeedInsights />
+                    <Analytics />
                 </NextIntlClientProvider>
             </body>
         </html>
