@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import Image from "next/image";
 import { Container } from "@/components/ui/container";
 import { SectionHeader } from "@/components/ui/section-header";
 
@@ -96,9 +97,11 @@ export function Testimonials() {
                                 >
                                     <div className="flex items-start justify-between">
                                         <div className="flex items-center gap-3">
-                                            <img
+                                            <Image
                                                 src={testimonial.avatar}
                                                 alt="Avatar"
+                                                width={40}
+                                                height={40}
                                                 className="h-10 w-10 rounded-full object-cover"
                                             />
                                             <div>
@@ -139,9 +142,11 @@ export function Testimonials() {
                                 >
                                     <div className="flex items-start justify-between">
                                         <div className="flex items-center gap-3">
-                                            <img
+                                            <Image
                                                 src={testimonial.avatar}
                                                 alt="Avatar"
+                                                width={40}
+                                                height={40}
                                                 className="h-10 w-10 rounded-full object-cover"
                                             />
                                             <div>
