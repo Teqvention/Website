@@ -22,8 +22,7 @@ export const routing = defineRouting({
         }
     ],
 
-    localePrefix: 'never',
-    localeDetection: false
+    localePrefix: 'never'
 });
 
 export const { Link, redirect, usePathname, useRouter } =
