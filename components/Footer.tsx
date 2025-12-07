@@ -14,8 +14,12 @@ export function Footer() {
                         {/* Brand */}
                         <div className="lg:w-1/3 space-y-5">
                             <div className="flex items-center gap-3">
-                                <div className="w-9 h-9 rounded-xl bg-blue-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/20">
-                                    <Bot className="h-5 w-5" />
+                                <div className="relative w-9 h-9">
+                                    <img
+                                        src="/logo.png"
+                                        alt="Teqvention"
+                                        className="object-contain w-full h-full"
+                                    />
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-sm font-semibold tracking-tight text-slate-900">

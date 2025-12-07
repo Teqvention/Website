@@ -41,14 +41,18 @@ export function Navbar() {
             <Container>
                 <div className="flex h-20 items-center justify-between">
                     {/* Logo */}
-                    <div className="flex items-center gap-2">
-                        <div className="flex shadow-blue-500/20 text-white bg-blue-600 w-8 h-8 rounded-lg shadow-md items-center justify-center">
-                            <Bot className="h-5 w-5" />
+                    <Link href="/" className="flex items-center gap-2 group">
+                        <div className="relative w-8 h-8">
+                            <img
+                                src="/logo.png"
+                                alt="Teqvention"
+                                className="object-contain w-full h-full"
+                            />
                         </div>
                         <span className="text-xl font-semibold tracking-tight text-slate-900">
                             Teqvention
                         </span>
-                    </div>
+                    </Link>
 
                     {/* Desktop Navigation Links */}
                     <div className="hidden items-center gap-8 md:flex">
