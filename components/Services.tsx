@@ -23,7 +23,7 @@ export function Services() {
                                 <div className={`inline-flex shadow-blue-500/20 text-white ${service.bgColor} w-14 h-14 rounded-2xl mb-8 shadow-lg items-center justify-center`}>
                                     <service.icon className="h-7 w-7" />
                                 </div>
-                                <CardTitle className="mb-3 text-2xl">
+                                <CardTitle className="mb-3">
                                     {t(`items.${service.id}.title`)}
                                 </CardTitle>
                                 <CardDescription className="text-base leading-relaxed">

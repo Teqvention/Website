@@ -95,7 +95,7 @@ export function Testimonials() {
                                                 ))}
                                             </div>
                                         </div>
-                                        <p className="mt-4 text-sm leading-relaxed text-slate-600">
+                                        <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-600">
                                             {t(`items.${index}.quote`)}
                                         </p>
                                     </article>
@@ -143,7 +143,7 @@ export function Testimonials() {
                                                 ))}
                                             </div>
                                         </div>
-                                        <p className="mt-4 text-sm leading-relaxed text-slate-600">
+                                        <p className="mt-4 text-sm sm:text-base leading-relaxed text-slate-600">
                                             {t(`items.${index}.quote`)}
                                         </p>
                                     </article>

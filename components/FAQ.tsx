@@ -28,10 +28,10 @@ export function FAQ() {
                 <Accordion type="single" collapsible className="w-full space-y-4">
                     {keys.map((key) => (
                         <AccordionItem key={key} value={key} className="bg-white border text-left border-slate-200 rounded-2xl px-6 data-[state=open]:border-blue-200 hover:border-blue-200 transition-colors">
-                            <AccordionTrigger className="text-lg font-semibold text-slate-900 hover:no-underline hover:text-slate-700">
+                            <AccordionTrigger className="text-base sm:text-lg font-semibold text-slate-900 hover:no-underline hover:text-slate-700">
                                 {t(`items.${key}.question`)}
                             </AccordionTrigger>
-                            <AccordionContent className="text-base text-slate-600 leading-relaxed">
+                            <AccordionContent className="text-sm sm:text-base text-slate-600 leading-relaxed">
                                 {t(`items.${key}.answer`)}
                             </AccordionContent>
                         </AccordionItem>

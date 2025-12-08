@@ -23,11 +23,11 @@ export function SectionHeader({
                     {badge}
                 </Badge>
             )}
-            <h2 className="md:text-4xl text-3xl font-semibold text-slate-900 tracking-tight mt-2">
+            <h2 className="md:text-4xl sm:text-3xl text-2xl font-semibold text-slate-900 tracking-tight mt-2">
                 {title}
             </h2>
             {description && (
-                <p className="text-lg text-slate-500 max-w-2xl mt-4">{description}</p>
+                <p className="text-base sm:text-lg text-slate-500 max-w-2xl mt-4">{description}</p>
             )}
         </div>
     );
