@@ -43,7 +43,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://va.vercel-scripts.com https://vitals.vercel-insights.com; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://images.unsplash.com; font-src 'self'; connect-src 'self' https://va.vercel-scripts.com https://vitals.vercel-insights.com;"
+            value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://va.vercel-scripts.com https://vitals.vercel-insights.com https://app.cal.com; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https://images.unsplash.com; font-src 'self'; connect-src 'self' https://va.vercel-scripts.com https://vitals.vercel-insights.com https://cal.com; frame-src 'self' https://cal.com https://app.cal.com;"
           }
         ],
       },
