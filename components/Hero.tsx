@@ -10,8 +10,8 @@ export function Hero() {
     return (
         <main className="overflow-hidden lg:pt-24 pt-16 relative">
             <Container className="text-center">
-                <section className="text-center w-full mt-24 mb-16 flex flex-col items-center">
-                    <div className="inline-flex gap-2 transition-transform hover:scale-105 cursor-default bg-white border-gray-200 border rounded-full mb-8 pt-1.5 pr-4 pb-1.5 pl-4 shadow-sm gap-x-2 gap-y-2 items-center">
+                <section className="text-center w-full mt-8 md:mt-24 mb-16 flex flex-col items-center">
+                    <div className="inline-flex gap-2 transition-transform hover:scale-105 cursor-default bg-white border-gray-200 border rounded-full mb-6 md:mb-8 pt-1.5 pr-4 pb-1.5 pl-4 shadow-sm gap-x-2 gap-y-2 items-center">
                         <div className="flex gap-1">
                             {[...Array(5)].map((_, i) => (
                                 <Star
@@ -55,7 +55,7 @@ export function Hero() {
                             </div>
                         </div>
 
-                        <h1 className="md:text-7xl lg:text-7xl justify-center text-5xl font-semibold text-slate-900 tracking-tight">
+                        <h1 className="md:text-7xl lg:text-7xl justify-center text-3xl sm:text-5xl font-semibold text-slate-900 tracking-tight">
                             {t('headline_start')}
                             <span className="block bg-clip-text text-transparent bg-blue-600">
                                 {t('headline_end')}
@@ -63,10 +63,10 @@ export function Hero() {
                         </h1>
                     </div>
 
-                    <p className="leading-relaxed md:text-xl text-lg text-slate-500 max-w-2xl mt-8 mr-auto ml-auto">
+                    <p className="leading-relaxed md:text-xl text-lg text-slate-500 max-w-2xl mt-4 md:mt-8 mr-auto ml-auto">
                         {t('subheadline')}
                     </p>
-                    <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 text-base font-medium text-slate-700 mt-8 gap-x-4 gap-y-4 items-center justify-center">
+                    <div className="flex flex-col gap-4 sm:flex-row sm:gap-8 text-base font-medium text-slate-700 mt-6 md:mt-8 gap-x-4 gap-y-4 items-center justify-center">
                         <div className="flex gap-x-2 gap-y-2 items-center">
                             {/* Server in Deutschland Flag */}
                             <img src="/svg/flag-de.svg" alt="Germany Flag" className="w-[20px] h-[20px]" />
@@ -80,7 +80,7 @@ export function Hero() {
                     </div>
 
                     {/* CTA Buttons */}
-                    <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+                    <div className="mt-8 md:mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
                         <Button asChild size="lg" className="w-full sm:w-auto text-lg h-auto py-4 px-8">
                             <Link href="#" className="group">
                                 {t('cta_button')}
