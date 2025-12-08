@@ -19,6 +19,16 @@ export const routing = defineRouting({
             domain: 'teqvention.de',
             defaultLocale: 'de',
             locales: ['de']
+        },
+        {
+            domain: 'www.teqvention.com',
+            defaultLocale: 'en',
+            locales: ['en']
+        },
+        {
+            domain: 'www.teqvention.de',
+            defaultLocale: 'de',
+            locales: ['de']
         }
     ],
 
